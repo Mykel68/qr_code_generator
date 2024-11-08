@@ -14,7 +14,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Share2, Download, AlertCircle, X, Copy, Mail, Upload, Palette } from 'lucide-react'
+import { Share2, Download, AlertCircle, X, Copy, Mail, Upload } from 'lucide-react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function QRCodeGenerator() {
@@ -145,7 +145,7 @@ export default function QRCodeGenerator() {
                   ref={qrRef}
                 />
               ) : (
-                <div className="w-[200px] h-[200px] flex items-center justify-center text-gray-400 text-lg">
+                <div className="w-[200px] h-[200px] text-center flex items-center justify-center text-gray-400 text-lg">
                   QR Code will appear here
                 </div>
               )}
